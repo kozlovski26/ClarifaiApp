@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2X2-g3-WD9">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XHa-9c-emz">
+            <objects>
+                <viewController id="P0m-Nd-h8i" customClass="ViewController" customModule="ClarifaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A9v-ui-gFl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbO-N8-mtf">
+                                <rect key="frame" x="30" y="62" width="106" height="42"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-gn-axc">
+                                <rect key="frame" x="30" y="112" width="106" height="42"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5B-6w-jca">
+                                <rect key="frame" x="30" y="655" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="cameraIcon"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="P0m-Nd-h8i" eventType="touchUpInside" id="pVD-Ko-Yzl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKw-N1-ann">
+                                <rect key="frame" x="30" y="257" width="315" height="299"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEo-JY-eTB">
+                                <rect key="frame" x="160" y="62" width="129" height="121"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-34-koU">
+                                <rect key="frame" x="281" y="655" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="photos"/>
+                                <connections>
+                                    <action selector="takeFromLibrary:" destination="P0m-Nd-h8i" eventType="touchUpInside" id="Lwb-c0-fN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79064633666652517" green="0.91363698244094849" blue="0.91764825582504272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <accessibility key="accessibilityConfiguration" label="main">
+                            <accessibilityTraits key="traits" none="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="M1o-HN-xHg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="mainSmall" id="R6a-76-4Fd">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="KaD-p9-22G"/>
+                    <connections>
+                        <outlet property="ImageView" destination="FKw-N1-ann" id="jjm-HV-F5G"/>
+                        <outlet property="ageLbl" destination="l27-gn-axc" id="uzm-FG-m3c"/>
+                        <outlet property="genderImage" destination="GEo-JY-eTB" id="PZx-NG-R1F"/>
+                        <outlet property="genderLbl" destination="CbO-N8-mtf" id="R38-XI-3RS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BsP-UI-QEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.60000000000002" y="-995.32019704433503"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="Y8k-0S-gbK">
+            <objects>
+                <tabBarController storyboardIdentifier="main" id="2X2-g3-WD9" customClass="MainTabBarViewController" customModule="ClarifaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4b6-fI-hWX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8n8-6N-yrP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P0m-Nd-h8i" kind="relationship" relationship="viewControllers" id="v1w-pF-NNu"/>
+                        <segue destination="50W-mo-qEf" kind="relationship" relationship="viewControllers" id="uvN-uA-V3W"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afs-ph-2RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="-658"/>
+        </scene>
+        <!--Take a picture-->
+        <scene sceneID="V05-Sx-CHC">
+            <objects>
+                <viewController id="50W-mo-qEf" customClass="ImageViewController" customModule="ClarifaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EsK-1a-Btg"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOE-Th-BAu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pzd-y1-dG7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6V-uI-iEE">
+                                <rect key="frame" x="162" y="638" width="50" height="74"/>
+                                <state key="normal" title="Button" image="circle"/>
+                                <connections>
+                                    <action selector="takephoto:" destination="50W-mo-qEf" eventType="touchUpInside" id="Gpd-oI-qju"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-jh-fKy">
+                                <rect key="frame" x="67" y="697" width="240" height="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="b"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x6V-uI-iEE" firstAttribute="leading" secondItem="uVA-WP-mXc" secondAttribute="leading" constant="162" id="2Xx-aY-bhR"/>
+                            <constraint firstItem="oOE-Th-BAu" firstAttribute="top" secondItem="x6V-uI-iEE" secondAttribute="bottom" constant="17" id="Qfl-B6-mFj"/>
+                            <constraint firstItem="x6V-uI-iEE" firstAttribute="top" secondItem="fOa-jh-fKy" secondAttribute="bottom" id="aQ7-mN-3d8"/>
+                            <constraint firstItem="uVA-WP-mXc" firstAttribute="trailing" secondItem="x6V-uI-iEE" secondAttribute="trailing" constant="163" id="to1-L5-bgr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uVA-WP-mXc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="instegramSmall" id="eOf-6Z-AgK">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="1" vertical="0.0"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Take a picture" id="jGx-mG-6au"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdT-ja-ql4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="-322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cameraIcon" width="50" height="50"/>
+        <image name="circle" width="50" height="50"/>
+        <image name="instegramSmall" width="30" height="30"/>
+        <image name="mainSmall" width="30" height="30"/>
+        <image name="photos" width="50" height="50"/>
+    </resources>
+</document>

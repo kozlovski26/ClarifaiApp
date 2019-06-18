@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ProgressMeter (0.1.6)
+  - QUGenderView (0.1.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ProgressMeter
+  - QUGenderView
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ProgressMeter
+    - QUGenderView
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ProgressMeter: f24e399e876e4eb63a800d26639f1777b31e8a74
+  QUGenderView: 72e9d3ddea5def6ad422dafedcdac1bd49d84443
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: ce1d007b9f0753520753b5113b046e8edc99f0b3
+
+COCOAPODS: 1.6.1
